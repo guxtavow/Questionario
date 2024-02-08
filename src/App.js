@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './componentes/header/Header.js'
+import Banner from './componentes/banner/Banner.js'
 
 
 
@@ -9,7 +10,9 @@ function App() {
     <div className="App">
       {/* ---------------------------  HEADER DO SITE  --------------------------- */}
       <Header />
-      {/* ---------------------------  BODY DO SITE  --------------------------- */}
+      {/* ---------------------------  BANNER DO SITE  --------------------------- */}
+      <Banner />
+      {/* ---------------------------  BODY DO SITE  ----------------------------- */}
 
 
     </div>
