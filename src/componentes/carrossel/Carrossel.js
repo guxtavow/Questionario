@@ -21,7 +21,7 @@ export default function Carrossel(){
       slidesPerView={'2'}
       coverflowEffect={{
           rotate:0,
-          stretch:0,
+          stretch:30,
           depth:100,
           modifier:2.5,
         }}
