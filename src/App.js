@@ -1,7 +1,8 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './componentes/header/Header.js'
 import Banner from './componentes/banner/Banner.js'
+import Carrossel from './componentes/carrossel/Carrossel.js'
 
 
 
@@ -13,7 +14,7 @@ function App() {
       {/* ---------------------------  BANNER DO SITE  --------------------------- */}
       <Banner />
       {/* ---------------------------  CARROSSEL DO SITE  ----------------------------- */}
-
+      <Carrossel />
 
     </div>
   );

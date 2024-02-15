@@ -1,0 +1,79 @@
+.container-fluid3{
+    width: 100vw;
+    margin-top: 10px;
+    display: inline-flex;
+    border: solid;
+    height: 41vh;
+}
+
+#anterior{
+    height: min-content;
+    margin: auto;
+}
+
+.components{
+    display: inline-block;
+    border: solid;
+    height: auto;
+    width: 95%;
+}
+
+.componente1{
+    margin: auto;
+    margin-top: 3vh;
+    width: 10vw;
+    height: 35vh;
+    border-radius: 25px;
+    border: solid;
+    background-color: #00DCAA;
+    cursor: pointer;
+    display: inline-block;
+    transition: box-shadow 0.5s ease;
+    transition: transform 0.5s ease;
+}
+.componente2{
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 20px;
+    width: 10vw;
+    height: 35vh;
+    border-radius: 25px;
+    border: solid;
+    background-color: #00DCAA;
+    cursor: pointer;
+    display: inline-block;
+    transition: box-shadow 0.5s ease;
+    transition: transform 0.5s ease;
+
+}
+.componente3{
+    margin: auto;
+    margin-top: 3vh;
+    margin-left: 20px;
+    width: 10vw;
+    height: 35vh;
+    border-radius: 25px;
+    border: solid;
+    background-color: #00DCAA;
+    cursor: pointer;
+    display: inline-block;
+    transition: box-shadow 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+div[class^="componente"]:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra quando o mouse está sobre a div */
+    transform: scale(1.05);
+}
+
+
+
+/*
+.componente2 .expandir{
+    width: 15vw;
+    transition: width 0.5s ease;
+}
+.componente3 .expandir{
+    width: 15vw;
+    transition: width 0.5s ease;
+}*/
