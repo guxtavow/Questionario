@@ -1,0 +1,131 @@
+.container-fluid3{
+    min-width: 70%;
+    width: auto;
+    max-width: 90%;
+    height: 35vh;
+    display: inline-block;
+}
+
+
+.componentes{
+    width: 90%;
+    margin: auto;
+    height: min-content;
+    display: inline-block;
+}
+
+
+.componente1{
+    margin: auto;
+    width: 9vw;
+    height: 30vh;
+    background-color: #00DCAA;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: top;
+    margin: 10px;
+    z-index: 2;
+}
+
+.expandido{
+    width: 18vw;
+    transition: width 0.5s ease;
+}
+
+.componente1 p{
+    color: white;
+    font-weight: normal;
+}
+.componente1 h1, h5{
+    font-weight: bolder;
+    color: white;
+}
+
+.componente1:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    scale: 1.07;
+}
+
+.indicador {
+    margin-right: 10px;
+    padding: auto;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius:10px;
+    cursor: pointer;
+}
+.indicador.active{
+    background-color: blueviolet;
+}
+
+
+
+@media screen and   (max-width:1600px)  {
+
+    .container-fluid3{
+        min-width: 70%;
+        width: auto;
+        max-width: 90%;
+        height: 35vh;
+        display: inline-block;
+    }
+      
+    .componentes{
+        border: solid;
+        width: 90%;
+        margin: auto;
+        height: min-content;
+        display: inline-block;
+    }
+    
+    
+    .componente1{
+        margin: auto;
+        width: 10.5vw;
+        height: 38vh;
+        background-color: #00DCAA;
+        transition: all 0.5s ease;
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+        margin: 10px;
+        z-index: 2;
+    }
+    
+    .expandido{
+        width: 18vw;
+        transition: width 0.5s ease;
+    }
+    
+    .componente1 p{
+        color: white;
+        font-weight: normal;
+    }
+    .componente1 h1, h5{
+        font-weight: bolder;
+        color: white;
+    }
+    
+    .componente1:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        scale: 1.07;
+    }
+    
+    .indicador {
+        margin-right: 10px;
+        padding: auto;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius:10px;
+        cursor: pointer;
+    }
+    .indicador.active{
+        background-color: blueviolet;
+    }
+    
+}
