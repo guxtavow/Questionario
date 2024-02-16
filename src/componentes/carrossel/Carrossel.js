@@ -1,47 +1,73 @@
 import './Carrossel.css'
 import React, { useState } from "react";
 import Fundo from './fundo.png'
-import {Swiper, SwiperSlide} from "swiper/react"
-import 'swiper/css'
-import 'swiper/css/effect-coverflow'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
 
-import {EffectCoverflow, Pagination, Navigation} from 'swiper'
-
-/* TESTE 1 */
 export default function Carrossel(){
-  return(
-    <div className='container-fluid3'>
-      <Swiper
-      effect={'coverflow'}
-      grabCursor = {true}
-      centeredSlides = {true}
-      loop={true}
-      slidesPerView={'2'}
-      coverflowEffect={{
-          rotate:0,
-          stretch:30,
-          depth:100,
-          modifier:2.5,
-        }}
-        className='swiper-container'
-      >
-        <SwiperSlide>
-          <img src={Fundo} alt='img1'></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Fundo} alt='img1'></img>
-        </SwiperSlide>
-        <div className='slider-controler'>
+    const [expandido, setExpandido] = useState(Array(3).fill(false));
+    const [activeIndex, setActiveIndex] = useState(1); // Adiciona estado para controlar o índice ativo
 
-        </div>
-      </Swiper>
+    const Clique = (index) => {
+        const newExpandido = [...expandido];
+        newExpandido[index] = !newExpandido[index];
+        setExpandido(newExpandido);
+        setActiveIndex(index); // Atualiza o índice ativo
+    };
 
-    </div>
-  )
+    const img = [
+        `url(${Fundo})`
+    ];
 
+    return(
+        <>
+            <div className='container-fluid3'>
+                <li onClick={()=> Clique(0)} className={`indicador ${activeIndex === 0 ? 'active' : ''}`}></li>
+                <li onClick={()=> Clique(1)} className={`indicador ${activeIndex === 1 ? 'active' : ''}`}></li>
+                <li onClick={()=> Clique(2)} className={`indicador ${activeIndex === 2 ? 'active' : ''}`}></li>
+                <br></br>
+
+                <div className={`componente1 ${expandido[0] ? 'expandido' : ''} ${activeIndex === 0 ? 'active' : ''}`} onClick={() => Clique(0)}>
+                    {expandido[0] ?(
+                        <>
+                        <h1>TESTE</h1>
+                        <p>TESTE CLICADO AQUI</p>
+                        </>
+                    ):(
+                        <>
+                        <h5>TESTE</h5>
+                        <p>TESTE CLIQUE AQUI</p>
+                        </>
+                    )}
+                </div>
+                
+                <div className={`componente1 ${expandido[1] ? 'expandido' : ''} ${activeIndex === 1 ? 'active' : ''}`} onClick={() => Clique(1)} style={{background:img}}>
+                    {expandido[1] ?(
+                        <>
+                        <h1>RESULTADOS</h1>
+                        <p> O questionario de Resultados tem a funcionalidade de nos ajudar a entender melhor sua necessidade,
+                           compartilhe conosco como foi sua experiência com o Sebrae!</p>
+                        </>
+                    ):(
+                        <>
+                        <h5>RESULTADOS</h5>
+                        <p>Questionario de Resultados do Sebrae</p>
+                        </>
+                    )}
+                </div>
+
+                <div className={`componente1 ${expandido[2] ? 'expandido' : ''} ${activeIndex === 2 ? 'active' : ''}`} onClick={() => Clique(2)}>
+                    {expandido[2] ?(
+                        <>
+                        <h1>TESTE</h1>
+                        <p>TESTE CLICADO AQUI</p>
+                        </>
+                    ):(
+                        <>
+                        <h5>TESTE</h5>
+                        <p>TESTE CLIQUE AQUI</p>
+                        </>
+                    )}
+                </div>
+            </div>
+        </>
+    );
 }
-
-
-
