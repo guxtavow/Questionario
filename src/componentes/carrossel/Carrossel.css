@@ -102,7 +102,7 @@
     
     .componente1 p{
         color: white;
-        font-weight: normal;
+        font-weight: bold;
     }
     .componente1 h1, h5{
         font-weight: bolder;

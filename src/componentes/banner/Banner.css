@@ -93,3 +93,107 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
+
+  @media screen and   (max-width:1600px)  {
+    .container-fluid1{ /* CONTAINER FLUIDO PARA OCUPAR TODA A PAGINA */
+      background: linear-gradient(to left,#48308C,#50359D,#6B4BC6,#835BF5,#A5D5B4);
+      z-index: 0;
+      display: flex;
+      width: 100%;
+      height: 48vh;
+  }
+  
+  #ImagemBanner{ /* IMAGEM DO BANNER */
+      vertical-align:left;
+      z-index: 1;
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Gradiente linear transparente para opaco da esquerda para a direita */
+      -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); /* Cria uma máscara para a esquerda */
+      mask-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  }
+  
+  .teste{ /* DIV DOS TEXTOS */
+      display: flex;
+      text-align: left;
+      height: min-content;
+      margin: auto;
+      margin-left: -20px;
+      line-height: 1;
+  }
+  
+  #Subtitulo{ /* SUBTITULO DO BANNER */
+      font-size: 2.8vh;
+      font-weight: lighter;
+      line-height: 2.3;
+  }
+  
+  #TituloBanner{/* TITULO DO BANNER */
+      padding: 10px;
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      margin-right: 10px;
+      font-size: 11vh;
+      font-weight: bolder;
+      color: white;
+      line-height: 1;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* EFEITO OUTSHADOW NO TEXTO */
+  }
+  
+  .ImgDados{ /* LOGO DE DADOS E PESQUISAS DO SEBRAE */
+      margin-top: auto;
+      margin-bottom: 30px;
+      margin-right: 10px;
+      margin-left: -30px;
+      height: min-content;
+      width: min-content;
+  }
+  
+  /*  CLASSES DE FADE PARA SEREM CHAMADAS NO JS E APLICAREM O EFEITO  */
+  
+  .fade-enter { 
+      opacity: 0;
+    }
+    
+    .fade-enter-active {
+      opacity: 1;
+      transition: opacity 3s ease-in-out;
+    }
+    
+    .fade-exit {
+      opacity: 1;
+    }
+    
+    .fade-exit-active {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+  
+    
+   /* DUAS CLASSES PARA APLICAR TEMPOS DIFERENTES DE FADE-IN */
+  
+  
+    .fade1-enter {
+      opacity: 0;
+    }
+    
+    .fade1-enter-active {
+      opacity: 1;
+      transition: opacity 7s ease-in-out;
+    }
+    
+    .fade1-exit {
+      opacity: 1;
+    }
+    
+    .fade1-exit-active {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+  
+
+
+  
+
+
+  }
