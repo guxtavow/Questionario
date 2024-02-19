@@ -1,0 +1,62 @@
+.container-fluid4{ /* CONTAINER GERAL DO FOOTER  */
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+
+}
+.container-fluid4 h7{ /* TAG DO TITULO */
+    color:white;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* EFEITO OUTSHADOW NO TEXTO */
+}
+.sociais{ /* REDES SOCIAIS   */
+    margin: auto;
+    margin-top: 5px;
+    margin-left: -25px;
+}
+
+/* ------------------------- TEXTO ANTES DAS SOCIAIS ------------------------ */
+#textSocial{ 
+    width: 900px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* EFEITO OUTSHADOW NO TEXTO */
+
+}
+
+
+#logoS{
+    margin: 20px;
+    margin-top: 80px;
+}
+
+/* ------------------------------- LOGO SEBRAE ------------------------------ */
+#Sebrae{
+    margin-top: 30px;
+}
+
+
+/* ------------------------------ REDES SOCIAIS ----------------------------- */
+#face, #insta, #X, #youtube{
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* ------------------------------ FUNÇÕES HOVER ----------------------------- */
+
+#face:hover{
+    transform: scale(1.2);
+}
+
+#insta:hover{
+    transform: scale(1.2);
+}
+
+#X:hover{
+    transform: scale(1.2);
+}
+
+#youtube:hover{
+    transform: scale(1.2);
+}

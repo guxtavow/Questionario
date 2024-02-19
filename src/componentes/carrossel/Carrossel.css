@@ -82,7 +82,7 @@
         min-width: 70%;
         width: auto;
         max-width: 90%;
-        height: 35vh;
+        height: 48vh;
         display: inline-block;
     }
       
@@ -99,7 +99,7 @@
         margin: auto;
         margin-top: 3px;
         width: 10.5vw;
-        height: 38vh;
+        height: 49vh;
         background-color: #00DCAA;
         transition: all 0.5s ease;
         display: inline-block;
@@ -109,7 +109,7 @@
     }
     
     .expandido{
-        width: 18vw;
+        width: 28vw;
         transition: width 0.5s ease;
     }
     

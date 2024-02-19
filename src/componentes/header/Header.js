@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 
 export default function Header(){
 
-        const [activeIndex, setActiveIndex] = useState(3);
+        const [activeIndex, setActiveIndex] = useState(2);
     
         const handleClick = (index) => {
             setActiveIndex(index);
@@ -25,17 +25,17 @@ export default function Header(){
                             <ul className="navbar-nav ml-auto">
                                 <div className={`fundo ${activeIndex === 0 ? 'active' : ''}`} onClick={() => handleClick(0)}>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">SOBRE</a>
+                                        <a className="nav-link" href="#footer">SOCIAIS</a>
                                     </li>
                                 </div>
                                 <div className={`fundo ${activeIndex === 1 ? 'active' : ''}`} onClick={() => handleClick(1)}>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">SOCIAIS</a>
+                                        <a className="nav-link" href="#questionarios">QUESTIONÁRIOS</a>
                                     </li>
                                 </div>
                                 <div className={`fundo ${activeIndex === 2 ? 'active' : ''}`} onClick={() => handleClick(2)}>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">FORMULÁRIOS</a>
+                                        <a className="nav-link" href="#">HOME</a>
                                     </li>
                                 </div>
                                 <div className={`fundo ${activeIndex === 3 ? 'active' : ''}`} onClick={() => handleClick(3)}>
