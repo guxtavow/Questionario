@@ -20,11 +20,6 @@ export default function Carrossel(){
     return(
         <>
             <div className='container-fluid3'>
-                <li onClick={()=> Clique(0)} className={`indicador ${activeIndex === 0 ? 'active' : ''}`}></li>
-                <li onClick={()=> Clique(1)} className={`indicador ${activeIndex === 1 ? 'active' : ''}`}></li>
-                <li onClick={()=> Clique(2)} className={`indicador ${activeIndex === 2 ? 'active' : ''}`}></li>
-                <br></br>
-
                 <div className={`componente1 ${expandido[0] ? 'expandido' : ''} ${activeIndex === 0 ? 'active' : ''}`} onClick={() => Clique(0)}>
                     {expandido[0] ?(
                         <>
@@ -45,6 +40,10 @@ export default function Carrossel(){
                         <h1>RESULTADOS</h1>
                         <p> O questionario de Resultados tem a funcionalidade de nos ajudar a entender melhor sua necessidade,
                            compartilhe conosco como foi sua experiência com o Sebrae!</p>
+                        <br />
+                        <a href="https://pesquisa.sebraesp.com.br/" target='_blank' rel='noopener noreferrer'>
+                        <button id='link'>ACESSAR</button>
+                        </a>
                         </>
                     ):(
                         <>
@@ -68,6 +67,10 @@ export default function Carrossel(){
                     )}
                 </div>
             </div>
+            <br />
+            <li onClick={()=> Clique(0)} className={`indicador ${activeIndex === 0 ? 'active' : ''}`}></li>
+            <li onClick={()=> Clique(1)} className={`indicador ${activeIndex === 1 ? 'active' : ''}`}></li>
+            <li onClick={()=> Clique(2)} className={`indicador ${activeIndex === 2 ? 'active' : ''}`}></li>
         </>
     );
 }
