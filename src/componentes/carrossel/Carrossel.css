@@ -2,7 +2,7 @@
     min-width: 70%;
     width: auto;
     max-width: 90%;
-    height: 35vh;
+    height: 45vh;
     display: inline-block;
 }
 
@@ -18,7 +18,7 @@
 .componente1{
     margin: auto;
     width: 10vw;
-    height: 35vh;
+    height: 45vh;
     background-color: #00DCAA;
     transition: all 0.5s ease;
     display: inline-block;
@@ -29,7 +29,7 @@
 }
 
 .expandido{
-    width: 18vw;
+    width: 25vw;
     transition: width 0.5s ease;
 }
 
