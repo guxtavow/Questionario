@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# LANDING PAGE QUESTIONÁRIOS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## SOBRE O PROJETO:
+A finalidade deste projeto é criar uma landing page para outras paginas de questionários do Sebrae, unificando assim tudo em apenas um lugar para fácil entendimento. Os questionarios do Sebrae tem finalidade de entender a necessidade e a satisfação de seus clientes na maioria dos casos.
 
-## Available Scripts
+## UTILIZAÇÕES:
+Neste projeto, alguns frameworks utilizados foram Node.js, React e Bootstrap.
 
-In the project directory, you can run:
+## O SITE ATÉ O MOMENTO APRESENTA:
+- Utilização de unica página para fácil compreendimento
+- Navbar 
+- Modelo estilo "Carrossel expansivo" para apresentação dos questionarios, suas finalidades e links
+- Sobre 
 
-### `npm start`
+## INSTALAÇÃO
+`$ npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## INICIANDO
+`$ npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## STATUS DO PROJETO:
+ Em andamento.
 
-### `npm test`
+### English Version:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ABOUT THE PROJECT:
+The purpose of this project is to create a landing page for other Sebrae questionnaire pages, this unifying everything in one place for easy understanding. Sebrae's questionnaires aim to understand the needs and satisfaction of his clients in most cases.
 
-### `npm run build`
+## UTILIZATIONS:
+In this project, some frameworks used were Node.js, React, and Bootstrap.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## THE SITE CURRENTLY FEATURES:
+- Use of a single page for easy comprehension
+- Navbar
+- "Expansive Carousel" style model for presenting the questionnaires, their purposes, and links
+- About section
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## INSTALLATION
+`$ npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## GETTING STARTED
+`$ npm start`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## PROJECT STATUS:
+In progress.

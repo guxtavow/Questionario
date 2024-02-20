@@ -2,8 +2,11 @@
     min-width: 70%;
     width: auto;
     max-width: 90%;
-    height: 45vh;
-    display: inline-block;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    overflow-inline:hidden;
+
 }
 
 
@@ -11,26 +14,35 @@
     width: 90%;
     margin: auto;
     height: min-content;
-    display: inline-block;
 }
 
 
-.componente1{
-    margin: auto;
-    width: 10vw;
-    height: 45vh;
+.componente1{ /* CONFIG DAS DIVS ANTES DE SER EXPANDIDA */
+    width: 14vw;
+    height: 65vh;
     background-color: #00DCAA;
     transition: all 0.5s ease;
     display: inline-block;
     margin-left: 15px;
     vertical-align: top;
     margin: 10px;
-    z-index: 2;
+    margin-top: 20px;
+    z-index: 1;
 }
 
-.expandido{
-    width: 25vw;
+.expandido{ /*CONFIG DAS DIVS AO SER EXPANDIDA*/
+    width: 35vw;
     transition: width 0.5s ease;
+}
+.expandido h1{
+    transition: width 0.5s ease;
+    top: 20%;
+    position: relative;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .componente1 p{
@@ -44,10 +56,12 @@
 
 .componente1:hover{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    scale: 1.07;
+    transform:scale(1.07);
+    margin: 22px;
+    transition: transform 0.5 ease;
 }
 
-.indicador {
+.indicador { /* INDICADORES DE BOLINHA */
     margin-right: 10px;
     margin-top: 30px;
     padding: auto;
@@ -61,7 +75,36 @@
 .indicador.active{
     background-color: blueviolet;
 }
-#link{
+#textoCarousel{ /* TEXTO QUANDO DIV FOR EXPANDIDA */
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    top:25%;
+    position: relative;
+    text-shadow: 
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+         -1px  1px 0 #000,
+          1px  1px 0 #000;
+}
+#TituloPadrao{ /* TITULO ANTES DA DIV SER EXPANDIDA  */
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+     margin-top: 80px;
+}
+#TextoPadrao{ /* TEXTO ANTES DA DIV SER EXPANDIDA  */
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+     margin-top: 10px;
+}
+
+#link{ /* BOTÃO DA DIV EXPANDIDA  */
     width: 115px;
     height: 38px;
     border-radius: 20px;
@@ -69,14 +112,33 @@
     border: 0px;
     color: white;
     font-weight: bolder;
+    position: relative;
+    top: 30%;
     text-shadow: -1px -1px 0 #000,  
                   1px -1px 0 #000,
                  -1px  1px 0 #000,
                   1px  1px 0 #000;
 }
 
+.fade3-enter { 
+    opacity: 0;
+  }
+  
+  .fade3-enter-active {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  .fade3-exit {
+    opacity: 1;
+  }
+  
+  .fade3-exit-active {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
 
-@media screen and   (max-width:1600px)  {
+@media screen and   (max-width:1600px)  { /* TELA MENORES DE NOTEBOOKS */
 
     .container-fluid3{
         min-width: 70%;

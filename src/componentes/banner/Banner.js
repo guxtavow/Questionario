@@ -22,7 +22,7 @@ export default function Banner(){
 
 return(
 <>
-    <div class="container-fluid1"> 
+    <div class="container-fluid1" id='banner'> 
     {/* USO O ELEMENTO DA BIBLIOTECA PARA CHAMAR A CONSTANTE/FUNÇÃO, JUNTO A SUA DEFINIÇÃO DE TEMPO PARA RODAR A VARIAVEL E O NOME DAS CLASSES CRIADAS NO CSS RESPONSÁVEIS PELA OPACIDADE */}
       <CSSTransition in={mostrar} timeout ={5000} classNames = "fade">  
         <img src={imgBanner} id="ImagemBanner" class={'IMGBanner'} width="685" ></img>
