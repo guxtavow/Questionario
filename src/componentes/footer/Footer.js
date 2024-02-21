@@ -1,7 +1,7 @@
 import './Footer.css'
 import face from './facebook.png'
 import insta from './instagram.png'
-import X from './xuitter.png'
+import X from './logoTwitter.png'
 import youtube from './youtube.png'
 import LOGO from './Logo Sebrae 1.png'
 
