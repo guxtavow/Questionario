@@ -1,7 +1,7 @@
 .container-fluid4{ /* CONTAINER GERAL DO FOOTER  */
     width: 100%;
     height: auto;
-    background-color: blueviolet;
+    background: linear-gradient(to left,#48308C,#50359D,#6B4BC6,#835BF5); /*  CORES GRADIENTES  */
 
 }
 .container-fluid4 h7{ /* TAG DO TITULO */
