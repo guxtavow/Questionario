@@ -34,3 +34,53 @@ background-color:#48308C;
     margin-left: 10px;
     margin-bottom: -1vh;
 }
+
+.nav-link{
+    padding: 30%;
+}
+
+@media screen and (max-width:1600px) {
+
+    header{
+        z-index: 2;
+        position: relative;
+    }
+    
+    .nav-item{
+        font-size: large;
+    }
+    .nav-item .nav-link{
+        color: #0071BB;
+        font-weight: bold;
+    }
+    .fundo:hover{
+    .nav-link{ color: #00DCAA;}
+    font-weight: bolder;
+    background-color:#48308C;
+    }
+    .active{
+        font-weight: bold;
+        background-color: #48308C;
+    }
+    .fundo.active .nav-item .nav-link{
+        color: white;
+    }
+    .fundo{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        height: 95px;
+        width:15vw;
+        margin-top: -1.3vh;
+        margin-right: -0.8vw;
+        margin-left: 11px;
+        margin-bottom: -1.3vh;
+    }
+    .nav-link{
+        padding: 35px;
+    }
+
+
+
+}

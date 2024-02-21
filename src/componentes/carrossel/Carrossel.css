@@ -144,65 +144,68 @@
         min-width: 70%;
         width: auto;
         max-width: 90%;
-        height: 48vh;
-        display: inline-block;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        overflow-inline:hidden;
+    
     }
-      
+    
+    
     .componentes{
-        border: solid;
         width: 90%;
         margin: auto;
         height: min-content;
-        display: inline-block;
     }
     
     
-    .componente1{
-        margin: auto;
-        margin-top: 3px;
-        width: 10.5vw;
-        height: 49vh;
+    .componente1{ /* CONFIG DAS DIVS ANTES DE SER EXPANDIDA */
+        width: 18vw;
+        height: 85vh;
         background-color: #00DCAA;
         transition: all 0.5s ease;
         display: inline-block;
         margin-left: 15px;
         vertical-align: top;
-        z-index: 2;
+        margin: 10px;
+        margin-top: 20px;
+        z-index: 1;
     }
     
-    .expandido{
-        width: 28vw;
+    .expandido{ /*CONFIG DAS DIVS AO SER EXPANDIDA*/
+        width: 35vw;
         transition: width 0.5s ease;
+    }
+    .expandido h1{
+        transition: width 0.5s ease;
+        top: 20%;
+        position: relative;
+        text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
     }
     
     .componente1 p{
         color: white;
         font-weight: bold;
-        font-size: 15px;
-        text-shadow: 
-       -1px -1px 0 #000,  
-        1px -1px 0 #000,
-       -1px  1px 0 #000,
-        1px  1px 0 #000;
     }
-
     .componente1 h1, h5{
         font-weight: bolder;
         color: white;
-        text-shadow: 
-       -1px -1px 0 #000,  
-        1px -1px 0 #000,
-       -1px  1px 0 #000,
-        1px  1px 0 #000;
     }
     
     .componente1:hover{
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-        scale: 1.07;
+        transform:scale(1.07);
+        margin: 22px;
+        transition: transform 0.5 ease;
     }
     
-    .indicador {
+    .indicador { /* INDICADORES DE BOLINHA */
         margin-right: 10px;
+        margin-top: 30px;
         padding: auto;
         display: inline-block;
         width: 10px;
@@ -214,8 +217,36 @@
     .indicador.active{
         background-color: blueviolet;
     }
-
-    #link{
+    #textoCarousel{ /* TEXTO QUANDO DIV FOR EXPANDIDA */
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        top:20%;
+        position: relative;
+        text-shadow: 
+             -1px -1px 0 #000,  
+              1px -1px 0 #000,
+             -1px  1px 0 #000,
+              1px  1px 0 #000;
+    }
+    #TituloPadrao{ /* TITULO ANTES DA DIV SER EXPANDIDA  */
+        text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+         margin-top: 80px;
+    }
+    #TextoPadrao{ /* TEXTO ANTES DA DIV SER EXPANDIDA  */
+        text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+         margin-top: 10px;
+    }
+    
+    #link{ /* BOTÃO DA DIV EXPANDIDA  */
         width: 115px;
         height: 38px;
         border-radius: 20px;
@@ -223,10 +254,30 @@
         border: 0px;
         color: white;
         font-weight: bolder;
+        position: relative;
+        top: 20%;
         text-shadow: -1px -1px 0 #000,  
                       1px -1px 0 #000,
                      -1px  1px 0 #000,
                       1px  1px 0 #000;
     }
+    
+    .fade3-enter { 
+        opacity: 0;
+      }
+      
+      .fade3-enter-active {
+        opacity: 1;
+        transition: opacity 3s ease-in-out;
+      }
+      
+      .fade3-exit {
+        opacity: 1;
+      }
+      
+      .fade3-exit-active {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
     
 }

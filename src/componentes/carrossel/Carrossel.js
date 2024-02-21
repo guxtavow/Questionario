@@ -5,24 +5,25 @@ import { CSSTransition } from 'react-transition-group' //IMPORTO UMA BIBLIOTECA 
 
 export default function Carrossel(){
 
-    const [mostrar4,mostrarCarousel] = useState(false) //efeito fade-in
+    /* ---------------------------- efeito fade-in ---------------------------- */
+    const [mostrar4,mostrarCarousel] = useState(false) 
 
     useEffect(() =>{
         const timer4 = setTimeout(() => mostrarCarousel(true),100)
         const tempos1 = timer4
         return () => clearTimeout(tempos1)
     },[])
-
+    /* ---------------------------- //efeito fade-in ---------------------------- */
     
 
     const [expandido, setExpandido] = useState(Array(4).fill(false));
     const [activeIndex, setActiveIndex] = useState(1); // Adiciona estado para controlar o índice ativo dos indicadores
 
     const Clique = (index) => { //RECEBE UM PARAMETRO INDEX
-        const newExpandido = [...expandido]; //CRIA UMA COPIA DO ESTADO EXPANDIDO
-        newExpandido[index] = !newExpandido[index]; //INVERTE O VALOR DO INDICE
-        setExpandido(newExpandido); //ATUALIZA O ESTADO EXPANDIDO RENDERIZANDO O COMPONENTE
-        setActiveIndex(index); // ATUALIZO O INDICE ATIVO (ISSO PARA OS INDICADORES)
+        const newExpandido = [...expandido] //CRIA UMA COPIA DO ESTADO EXPANDIDO
+        newExpandido[index] = !newExpandido[index] //INVERTE O VALOR DO INDICE
+        setExpandido(newExpandido) //ATUALIZA O ESTADO EXPANDIDO RENDERIZANDO O COMPONENTE
+        setActiveIndex(index) // ATUALIZO O INDICE ATIVO (ISSO PARA OS INDICADORES)
     };
 
     const img = [
@@ -38,7 +39,7 @@ export default function Carrossel(){
                     {expandido[0] ?( //CASO CLICADO PARA SER EXPANDIDO
                         <>
                         <h1>TESTE</h1>
-                        <p id='textoCarousel'>TESTE CLICADO AQUI</p>
+                        <p id='textoCarousel'> CLICADO </p>
                         </>
                     ):( //CASO NÃO CLICADO
                         <>
@@ -71,7 +72,7 @@ export default function Carrossel(){
                     {expandido[2] ?(
                         <>
                         <h1>TESTE</h1>
-                        <p id='textoCarousel'>TESTE CLICADO AQUI</p>
+                        <p id='textoCarousel'>CLICADO </p>
                         </>
                     ):(
                         <>
@@ -84,7 +85,7 @@ export default function Carrossel(){
                     {expandido[0] ?( //CASO CLICADO PARA SER EXPANDIDO
                         <>
                         <h1>TESTE</h1>
-                        <p id='textoCarousel'>TESTE CLICADO AQUI</p>
+                        <p id='textoCarousel'> CLICADO </p>
                         </>
                     ):( //CASO NÃO CLICADO
                         <>
