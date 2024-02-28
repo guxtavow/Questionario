@@ -1,6 +1,6 @@
 import './Carrossel.css'
 import React, { useEffect ,useState } from "react";
-import Fundo from './fundo.png'
+import Fundo from './fundo.jpg'
 import { CSSTransition } from 'react-transition-group' //IMPORTO UMA BIBLIOTECA DO CSS FOCADA EM TRANSIÇÃO
 
 export default function Carrossel(){
@@ -16,8 +16,10 @@ export default function Carrossel(){
     /* ---------------------------- //efeito fade-in ---------------------------- */
     
 
-    const [expandido, setExpandido] = useState(Array(4).fill(false));
+    const [expandido, setExpandido] = useState(Array(4).fill(false).map((_,index)=>index===1)); //defino as constantes e o estado da div
     const [activeIndex, setActiveIndex] = useState(1); // Adiciona estado para controlar o índice ativo dos indicadores
+    
+
 
     const Clique = (index) => { //RECEBE UM PARAMETRO INDEX
         const newExpandido = [...expandido] //CRIA UMA COPIA DO ESTADO EXPANDIDO
@@ -25,7 +27,6 @@ export default function Carrossel(){
         setExpandido(newExpandido) //ATUALIZA O ESTADO EXPANDIDO RENDERIZANDO O COMPONENTE
         setActiveIndex(index) // ATUALIZO O INDICE ATIVO (ISSO PARA OS INDICADORES)
     };
-
     const img = [
         `url(${Fundo})` //ADICIONO O COMANDO CSS COM A IMAGEM
     ];
@@ -36,7 +37,7 @@ export default function Carrossel(){
         <CSSTransition in={mostrar4} timeout ={10000} classNames = "fade3"> 
             <div className='container-fluid3' id='questionarios'>
                 <div className={`componente1 ${expandido[0] ? 'expandido' : ''} ${activeIndex === 0 ? 'active' : ''}`} onClick={() => Clique(0)}> {/* SE O INDICE 0 FOR CLICADO ACIONAR A FUNÇÃO EXPANDIDO, SE NÃO VOLTAR PARA O PADRÃO (O MESMO SEGUE PARA OS OUTROS ELEMENTOS) */}
-                    {expandido[0] ?( //CASO CLICADO PARA SER EXPANDIDO
+                    {expandido[0] ? ( //CASO CLICADO PARA SER EXPANDIDO
                         <>
                         <h1>TESTE</h1>
                         <p id='textoCarousel'> CLICADO </p>
@@ -49,7 +50,7 @@ export default function Carrossel(){
                     )}
                 </div>
 
-                <div className={`componente1 ${expandido[1] ? 'expandido' : ''} ${activeIndex === 1 ? 'active' : ''}`} onClick={() => Clique(1)} style={{backgroundImage:img, backgroundSize:'cover'}}>
+                <div className={`componente1 ${expandido[1] ? 'expandido' : ''} ${activeIndex === 1 ? 'active' : ''}`} onClick={() => Clique(1)} style={{backgroundImage:img, backgroundSize:'cover', backgroundPosition:'center'}}>
                     {expandido[1] ?(
                         <>
                         <h1>RESULTADOS</h1>
@@ -82,7 +83,7 @@ export default function Carrossel(){
                     )}
                 </div>
                 <div className={`componente1 ${expandido[3] ? 'expandido' : ''} ${activeIndex === 3 ? 'active' : ''}`} onClick={() => Clique(3)}> {/* SE O INDICE 0 FOR CLICADO ACIONAR A FUNÇÃO EXPANDIDO, SE NÃO VOLTAR PARA O PADRÃO (O MESMO SEGUE PARA OS OUTROS ELEMENTOS) */}
-                    {expandido[0] ?( //CASO CLICADO PARA SER EXPANDIDO
+                    {expandido[3] ?( //CASO CLICADO PARA SER EXPANDIDO
                         <>
                         <h1>TESTE</h1>
                         <p id='textoCarousel'> CLICADO </p>
@@ -98,7 +99,8 @@ export default function Carrossel(){
     </CSSTransition>
 
             <br />
-            <li onClick={()=> Clique(0)} className={`indicador ${activeIndex === 0 ? 'active' : ''}`}></li> {/* INDICADORES DE CADA DIV */}
+            {/* INDICADORES DE CADA DIV */}
+            <li onClick={()=> Clique(0)} className={`indicador ${activeIndex === 0 ? 'active' : ''}`}></li> 
             <li onClick={()=> Clique(1)} className={`indicador ${activeIndex === 1 ? 'active' : ''}`}></li>
             <li onClick={()=> Clique(2)} className={`indicador ${activeIndex === 2 ? 'active' : ''}`}></li>
             <li onClick={()=> Clique(3)} className={`indicador ${activeIndex === 3 ? 'active' : ''}`}></li>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .container-fluid3{
     min-width: 70%;
     width: auto;
@@ -36,13 +38,8 @@
 }
 .expandido h1{
     transition: width 0.5s ease;
-    top: 20%;
+    top: 15%;
     position: relative;
-    text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
 }
 
 .componente1 p{
@@ -52,6 +49,8 @@
 .componente1 h1, h5{
     font-weight: bolder;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .componente1:hover{
@@ -79,29 +78,19 @@
     width: 90%;
     margin: auto;
     text-align: center;
-    top:25%;
+    top:19%;
     position: relative;
-    text-shadow: 
-         -1px -1px 0 #000,  
-          1px -1px 0 #000,
-         -1px  1px 0 #000,
-          1px  1px 0 #000;
+    text-shadow: 2px -2px 30px #000;  
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
 }
 #TituloPadrao{ /* TITULO ANTES DA DIV SER EXPANDIDA  */
-    text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
      margin-top: 80px;
+     font-family: 'Montserrat', sans-serif;
 }
 #TextoPadrao{ /* TEXTO ANTES DA DIV SER EXPANDIDA  */
-    text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
      margin-top: 10px;
+     font-family: 'Montserrat', sans-serif;
 }
 
 #link{ /* BOTÃO DA DIV EXPANDIDA  */
@@ -113,11 +102,13 @@
     color: white;
     font-weight: bolder;
     position: relative;
-    top: 30%;
+    top: 20%;
     text-shadow: -1px -1px 0 #000,  
                   1px -1px 0 #000,
                  -1px  1px 0 #000,
                   1px  1px 0 #000;
+                  font-family: 'Montserrat', sans-serif;
+
 }
 
 .fade3-enter { 
@@ -180,11 +171,6 @@
         transition: width 0.5s ease;
         top: 20%;
         position: relative;
-        text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
     }
     
     .componente1 p{
@@ -194,6 +180,7 @@
     .componente1 h1, h5{
         font-weight: bolder;
         color: white;
+        margin-top: -80px;
     }
     
     .componente1:hover{
@@ -217,33 +204,27 @@
     .indicador.active{
         background-color: blueviolet;
     }
+
     #textoCarousel{ /* TEXTO QUANDO DIV FOR EXPANDIDA */
         width: 90%;
         margin: auto;
         text-align: center;
         top:20%;
         position: relative;
-        text-shadow: 
-             -1px -1px 0 #000,  
-              1px -1px 0 #000,
-             -1px  1px 0 #000,
-              1px  1px 0 #000;
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px -1px 50px #000;  
+    
     }
     #TituloPadrao{ /* TITULO ANTES DA DIV SER EXPANDIDA  */
-        text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
          margin-top: 80px;
+         font-family: 'Montserrat', sans-serif;
+
     }
     #TextoPadrao{ /* TEXTO ANTES DA DIV SER EXPANDIDA  */
-        text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
          margin-top: 10px;
+         font-family: 'Montserrat', sans-serif;
+
     }
     
     #link{ /* BOTÃO DA DIV EXPANDIDA  */
@@ -256,10 +237,8 @@
         font-weight: bolder;
         position: relative;
         top: 20%;
-        text-shadow: -1px -1px 0 #000,  
-                      1px -1px 0 #000,
-                     -1px  1px 0 #000,
-                      1px  1px 0 #000;
+        font-family: 'Montserrat', sans-serif;
+
     }
     
     .fade3-enter { 
