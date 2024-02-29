@@ -8,19 +8,20 @@
     display: flex;
     justify-content: center;
     overflow-inline:hidden;
-
+    margin: auto;
 }
 
 
 .componentes{
-    width: 90%;
+    width: 95%;
     margin: auto;
     height: min-content;
+    
 }
 
 
 .componente1{ /* CONFIG DAS DIVS ANTES DE SER EXPANDIDA */
-    width: 14vw;
+    width: 22vw;
     height: 65vh;
     background-color: #00DCAA;
     transition: all 0.5s ease;
@@ -33,13 +34,15 @@
 }
 
 .expandido{ /*CONFIG DAS DIVS AO SER EXPANDIDA*/
-    width: 35vw;
+    width: 60vw;
     transition: width 0.5s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 .expandido h1{
     transition: width 0.5s ease;
     top: 15%;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .componente1 p{
@@ -62,7 +65,7 @@
 
 .indicador { /* INDICADORES DE BOLINHA */
     margin-right: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: auto;
     display: inline-block;
     width: 10px;
@@ -94,7 +97,7 @@
 }
 
 #link{ /* BOTÃO DA DIV EXPANDIDA  */
-    width: 115px;
+    width: 123px;
     height: 38px;
     border-radius: 20px;
     background-color: blueviolet;
@@ -151,7 +154,7 @@
     
     
     .componente1{ /* CONFIG DAS DIVS ANTES DE SER EXPANDIDA */
-        width: 18vw;
+        width: 25vw;
         height: 85vh;
         background-color: #00DCAA;
         transition: all 0.5s ease;
@@ -164,7 +167,7 @@
     }
     
     .expandido{ /*CONFIG DAS DIVS AO SER EXPANDIDA*/
-        width: 35vw;
+        width: 60vw;
         transition: width 0.5s ease;
     }
     .expandido h1{
@@ -228,7 +231,7 @@
     }
     
     #link{ /* BOTÃO DA DIV EXPANDIDA  */
-        width: 115px;
+        width: 120px;
         height: 38px;
         border-radius: 20px;
         background-color: blueviolet;

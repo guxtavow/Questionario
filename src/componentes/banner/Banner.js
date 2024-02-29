@@ -25,12 +25,12 @@ return(
     <div class="container-fluid1" id='banner'> 
     {/* USO O ELEMENTO DA BIBLIOTECA PARA CHAMAR A CONSTANTE/FUNÇÃO, JUNTO A SUA DEFINIÇÃO DE TEMPO PARA RODAR A VARIAVEL E O NOME DAS CLASSES CRIADAS NO CSS RESPONSÁVEIS PELA OPACIDADE */}
       <CSSTransition in={mostrar} timeout ={5000} classNames = "fade">  
-        <img src={imgBanner} id="ImagemBanner" class={'IMGBanner'} width="685" ></img>
+        <img src={imgBanner} id="ImagemBanner" class={'IMGBanner'} width="685"></img>
       </CSSTransition>
       <CSSTransition in={mostrar2} timeout={10000} classNames ="fade1" >  
         <div class="teste">
         <p id="TituloBanner">Compartilhe conosco sua opinião!<br />
-            <p id="Subtitulo">e ajude-nos a continuar apoiando o empreendedorismo em todo o estado de São Paulo.</p>
+            <p id="Subtitulo"><h1>Responda abaixo as pesquisas feitas pelo SEBRAE, </h1> e ajude-nos a continuar apoiando o empreendedorismo em todo o estado de São Paulo.</p>
         </p>
         </div>
       </CSSTransition>

@@ -10,13 +10,13 @@ export default function Header(){
     const handleClick = (index) => {
       setActiveIndex(index); // Ao clicar, define qual parte do site ir/está ativa
     };
-  
+
         return (
             <header id='head'> 
                 <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">
-                            <img src={LOGO1} className="Logo1" alt="1logo" width="100" height="50" />
+                            <img src={LOGO1} className="Logo1" alt="1logo" width="100" height="50" style={{marginLeft:'20px'}} />
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
