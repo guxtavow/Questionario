@@ -47,7 +47,7 @@ export default function Carrossel(){
                         Sua participação é fundamental para aprimorarmos nossos serviços e te entendermos melhor. Compartilhe conosco sua valiosa experiência com o Sebrae. 
                         Seus insights e comentários são preciosos e nos ajudarão a continuar aprimorando nossa oferta para atender às suas expectativas e às de todos os nossos clientes. 
                         Estamos ansiosos para ouvir suas opiniões e contribuições.<br /><br />
-                        <b>Responda a pesquisa clicando no botão abaixo</b>
+                        <b>Responda a pesquisa clicando no botão abaixo:</b>
                         </p>
                         <br />
                         <a href="https://pesquisa.sebraesp.com.br/" target='_blank' rel='noopener noreferrer'> {/* BOTÃO PARA O LINK DA PAGINA */}
@@ -69,7 +69,7 @@ export default function Carrossel(){
                         <p id='textoCarousel'>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  
                         <br /><br />
-                        <b>Responda a pesquisa clicando no botão abaixo</b>
+                        <b>Responda a pesquisa clicando no botão abaixo:</b>
                         </p>
                         <br />
                         <a href="#" target='_blank' rel='noopener noreferrer'> {/* BOTÃO PARA O LINK DA PAGINA */}
