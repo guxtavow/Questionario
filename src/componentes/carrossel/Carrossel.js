@@ -78,7 +78,7 @@ export default function Carrossel(){
                         </>
                     ):(
                         <>
-                        <h5 id='TituloPadrao'>SATISFAÇÃO <br></br> COM A CONSULTORIA</h5>
+                        <h5 id='TituloPadrao'><b>SATISFAÇÃO <br></br> COM A CONSULTORIA</b></h5>
                         <p id='TextoPadrao'>Lorem ipsum dolor sit amet, consectetur</p>
                         </>
                     )}
