@@ -56,7 +56,7 @@ export default function Carrossel(){
                         </>
                     ):(
                         <>
-                        <h5 id='TituloPadrao'>FATURAMENTO</h5>
+                        <h5 id='TituloPadrao'><b>FATURAMENTO</b></h5>
                         <p id='TextoPadrao'>Questionario de Resultados do Sebrae</p>
                         </>
                     )}
