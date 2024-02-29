@@ -18,7 +18,7 @@ export default function Carrossel(){
     
 
     const [expandido, setExpandido] = useState(Array(4).fill(false).map((_,index)=>index=== 1 || 2)); //defino as constantes e o estado da div
-    const [activeIndex, setActiveIndex] = useState(1); // Adiciona estado para controlar o índice ativo dos indicadores
+    const [activeIndex, setActiveIndex] = useState(0); // Adiciona estado para controlar o índice ativo dos indicadores
     
 
 
