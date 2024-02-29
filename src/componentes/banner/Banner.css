@@ -98,7 +98,8 @@
     transition: opacity 1s ease-in-out;
   }
 
-  @media screen and   (max-width:1600px)  {
+  @media screen and   (max-width: 1600px)  {
+
     .container-fluid1{ /* CONTAINER FLUIDO PARA OCUPAR TODA A PAGINA */
       background: linear-gradient(to left,#48308C,#50359D,#6B4BC6,#835BF5,#A5D5B4);
       z-index: 0;
@@ -125,6 +126,7 @@
   }
   
   #Subtitulo{ /* SUBTITULO DO BANNER */
+      margin-top: 6px;
       font-size: 2.8vh;
       font-weight: lighter;
       line-height: 2.3;
@@ -135,11 +137,11 @@
       display: block;
       position: relative;
       z-index: 1;
-      width: 100%;
       margin-right: 10px;
       font-size: 11vh;
       font-weight: bolder;
       color: white;
+      width: fit-content;
       line-height: 1;
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* EFEITO OUTSHADOW NO TEXTO */
   }
@@ -148,7 +150,7 @@
       margin-top: auto;
       margin-bottom: 30px;
       margin-right: 10px;
-      margin-left: -30px;
+      margin-left: -20%;
       height: min-content;
       width: min-content;
   }
@@ -201,3 +203,4 @@
 
 
   }
+   
