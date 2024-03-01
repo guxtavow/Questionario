@@ -19,7 +19,7 @@ Neste projeto, alguns frameworks utilizados foram Node.js, React e Bootstrap.
 `$ npm start`
 
 ## STATUS DO PROJETO:
- Em andamento.
+ <h3><b><font color="green">Finalizado.</font></b></h3>
 
 ### English Version:
 
@@ -42,4 +42,4 @@ In this project, some frameworks used were Node.js, React, and Bootstrap.
 `$ npm start`
 
 ## PROJECT STATUS:
-In progress.
+ <h3><b><font color="green">Finished.</font></b></h3>
