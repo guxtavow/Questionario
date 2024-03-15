@@ -106,7 +106,7 @@
       z-index: 0;
       display: flex;
       width: 100%;
-      height: 60vh;
+      height: 69vh;
   }
   
   #ImagemBanner{ /* IMAGEM DO BANNER */
@@ -122,13 +122,15 @@
       text-align: left;
       height: min-content;
       margin: auto;
+      width: 893px;
+      height: auto;
       margin-left: -20px;
       line-height: 1;
   }
   
   #Subtitulo{ /* SUBTITULO DO BANNER */
-      margin-top: 6px;
-      font-size: 2.8vh;
+      margin-top: 40px;
+      font-size: 3.7vh;
       font-weight: lighter;
       line-height: 2.3;
   }
@@ -139,7 +141,7 @@
       position: relative;
       z-index: 1;
       margin-right: 10px;
-      font-size: 11vh;
+      font-size: 9vh;
       font-weight: bolder;
       color: white;
       line-height: 1;
