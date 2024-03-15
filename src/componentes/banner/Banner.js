@@ -29,8 +29,8 @@ return(
       </CSSTransition>
       <CSSTransition in={mostrar2} timeout={10000} classNames ="fade1" >  
         <div class="teste">
-        <p id="TituloBanner">Compartilhe conosco sua opinião!<br />
-            <p id="Subtitulo"><h1>Responda abaixo as pesquisas feitas pelo SEBRAE, </h1> e ajude-nos a continuar apoiando o empreendedorismo em todo o estado de São Paulo.</p>
+        <p id="TituloBanner">Sua opinião é importante para o SEBRAE!<br />
+            <p id="Subtitulo"><h1> Responda nossas pesquisas e ajude a construir um futuro melhor para o empreendedorismo em São Paulo.</h1> Escolha abaixo as pesquisas disponíveis.</p>
         </p>
         </div>
       </CSSTransition>

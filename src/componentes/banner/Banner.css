@@ -18,12 +18,14 @@
 }
 
 .teste{ /* DIV DOS TEXTOS */
+    width: 1100px;
     display: flex;
     text-align: left;
     height: min-content;
     margin: auto;
     margin-left: -20px;
     line-height: 1;
+    padding: 10px;
 }
 
 #Subtitulo{ /* SUBTITULO DO BANNER */
@@ -38,13 +40,12 @@
     display: block;
     position: relative;
     z-index: 1;
-    width: 1150px;
     margin-right: 10px;
     font-size: 11vh;
     font-weight: bolder;
     color: white;
     line-height: 1;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* EFEITO OUTSHADOW NO TEXTO */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .ImgDados{ /* LOGO DE DADOS E PESQUISAS DO SEBRAE */
@@ -141,7 +142,6 @@
       font-size: 11vh;
       font-weight: bolder;
       color: white;
-      width: fit-content;
       line-height: 1;
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* EFEITO OUTSHADOW NO TEXTO */
   }

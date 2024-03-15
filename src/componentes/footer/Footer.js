@@ -12,6 +12,8 @@ export default function Footer() {
         <footer className='container-fluid4' id='footer'>
             <br />
             <br />
+            <h3 id='tituloFooter'> Suas respostas serão tratadas com confidencialidade e anonimato.</h3>
+            <br />
                 <center>
                     <p id='textSocial'> {/* TEXTO ANTES DAS REDES SOCIAIS */}
                     Para atendimento para sua empresa acesse os canais de atendimento online,

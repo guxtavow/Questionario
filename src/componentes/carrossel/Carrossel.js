@@ -42,22 +42,18 @@ export default function Carrossel(){
                 <div className={`componente1 ${expandido[1] ? 'expandido' : ''} ${activeIndex === 1 ? 'active' : ''}`} onClick={() => Clique(1)} style={{backgroundImage:img[0], backgroundSize:'cover', backgroundPosition:'center'}}>
                     {expandido[1] ?(
                         <>
-                        <h1><b>FATURAMENTO</b></h1>
-                        <p id='textoCarousel'> O questionario de Resultados tem a funcionalidade de nos ajudar a entender melhor sua necessidade.
-                        Sua participação é fundamental para aprimorarmos nossos serviços e te entendermos melhor. Compartilhe conosco sua valiosa experiência com o Sebrae. 
-                        Seus insights e comentários são preciosos e nos ajudarão a continuar aprimorando nossa oferta para atender às suas expectativas e às de todos os nossos clientes. 
-                        Estamos ansiosos para ouvir suas opiniões e contribuições.<br /><br />
-                        <b>Responda a pesquisa clicando no botão abaixo:</b>
+                        <h1><b>Pesquisa de Impacto <br /> do SEBRAE no Faturamento</b></h1>
+                        <p id='textoCarousel'> <i><b>Objetivo:</b></i> Levantar a percepção de impacto do atendimento do SEBRAE no faturamento dos pequenos negócios paulistas.<br /><br />
                         </p>
                         <br />
                         <a href="https://pesquisa.sebraesp.com.br/" target='_blank' rel='noopener noreferrer'> {/* BOTÃO PARA O LINK DA PAGINA */}
-                        <button id='link'><b>RESPONDER</b></button>
+                        <button id='link'><b>RESPONDER AGORA</b></button>
                         </a>
                         </>
                     ):(
                         <>
-                        <h5 id='TituloPadrao'><b>FATURAMENTO</b></h5>
-                        <p id='TextoPadrao'>Questionario de Resultados do Sebrae</p>
+                        <h5 id='TituloPadrao'><b>Pesquisa de Impacto <br /> do SEBRAE no Faturamento</b></h5>
+                        <p id='TextoPadrao'>Questionario de resultados no faturamento do seu negócio através do Sebrae</p>
                         </>
                     )}
                 </div>
@@ -65,26 +61,25 @@ export default function Carrossel(){
                 <div className={`componente1 ${expandido[2] ? 'expandido' : ''} ${activeIndex === 2 ? 'active' : ''}`} onClick={() => Clique(2)} style={{backgroundImage:img[1], backgroundSize:'cover', backgroundPosition:'center'}}>
                     {expandido[2] ?(
                         <>
-                        <h1><b>SATISFAÇÃO <br></br> COM A CONSULTORIA</b></h1>
-                        <p id='textoCarousel'>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  
+                        <h1><b>Pesquisa de Satisfação <br />da Consultoria SEBRAE</b></h1>
+                        <p id='textoCarousel'><i><b>Objetivo:</b></i> Compreender a percepção dos clientes sobre a qualidade da consultoria SEBRAE 
                         <br /><br />
-                        <b>Responda a pesquisa clicando no botão abaixo:</b>
                         </p>
                         <br />
                         <a href="#" target='_blank' rel='noopener noreferrer'> {/* BOTÃO PARA O LINK DA PAGINA */}
-                        <button id='link'><b>RESPONDER</b></button>
+                        <button id='link'><b>RESPONDER AGORA</b></button>
                         </a>
                         </>
                     ):(
                         <>
-                        <h5 id='TituloPadrao'><b>SATISFAÇÃO <br></br> COM A CONSULTORIA</b></h5>
+                        <h5 id='TituloPadrao'><b>Pesquisa de Satisfação <br />da Consultoria SEBRAE</b></h5>
                         <p id='TextoPadrao'>Lorem ipsum dolor sit amet, consectetur</p>
                         </>
                     )}
                 </div>
+
             </div>
-    </CSSTransition>
+        </CSSTransition>
 
             <br />
             {/* INDICADORES DE CADA DIV */}

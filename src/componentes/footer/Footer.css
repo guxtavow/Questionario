@@ -60,3 +60,9 @@
 #youtube:hover{
     transform: scale(1.2);
 }
+
+#tituloFooter{ /* TITULO DO FOOTER  */
+    color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
