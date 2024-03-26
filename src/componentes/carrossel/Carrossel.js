@@ -3,6 +3,7 @@ import React, { useEffect ,useState } from "react";
 import Fundo from './fundo.jpg'
 import Fundo1 from './fundo1.jpg'
 import { CSSTransition } from 'react-transition-group' //IMPORTO UMA BIBLIOTECA DO CSS FOCADA EM TRANSIÇÃO
+import SOMA from './SOMA_LOGO.png'
 
 export default function Carrossel(){
 
@@ -61,19 +62,21 @@ export default function Carrossel(){
                 <div className={`componente1 ${expandido[2] ? 'expandido' : ''} ${activeIndex === 2 ? 'active' : ''}`} onClick={() => Clique(2)} style={{backgroundImage:img[1], backgroundSize:'cover', backgroundPosition:'center'}}>
                     {expandido[2] ?(
                         <>
-                        <h1><b>Pesquisa de Satisfação <br />da Consultoria SEBRAE</b></h1>
-                        <p id='textoCarousel'><i><b>Objetivo:</b></i> Compreender a percepção dos clientes sobre a qualidade da consultoria SEBRAE 
+                        <h1><b>Pesquisa de Satisfação <br />da Consultoria e Atendimento Coletivo</b></h1>
+                        <p id='textoCarousel'><i><b>Objetivo:</b></i> Compreender a percepção dos clientes sobre a qualidade da consultoria e atendimento do SEBRAE 
                         <br /><br />
                         </p>
                         <br />
                         <a href="#" target='_blank' rel='noopener noreferrer'> {/* BOTÃO PARA O LINK DA PAGINA */}
                         <button id='link'><b>RESPONDER AGORA</b></button>
-                        </a>
+                        </a><br />
+                        <img src={SOMA} alt='soma'id='SomaLogo'></img>
                         </>
                     ):(
                         <>
                         <h5 id='TituloPadrao'><b>Pesquisa de Satisfação <br />da Consultoria SEBRAE</b></h5>
-                        <p id='TextoPadrao'>Lorem ipsum dolor sit amet, consectetur</p>
+                        <p id='TextoPadrao'>Compreender a percepção dos clientes sobre a qualidade da consultoria e atendimento do SEBRAE </p>
+                        <img src={SOMA} alt='soma'id='SomaLogo2'></img>
                         </>
                     )}
                 </div>

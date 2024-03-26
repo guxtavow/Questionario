@@ -86,10 +86,12 @@
     text-shadow: 2px -2px 30px #000;  
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
+    z-index: 1;
 }
 #TituloPadrao{ /* TITULO ANTES DA DIV SER EXPANDIDA  */
      margin-top: 80px;
      font-family: 'Montserrat', sans-serif;
+     z-index: 1;
 }
 #TextoPadrao{ /* TEXTO ANTES DA DIV SER EXPANDIDA  */
      margin-top: 10px;
@@ -111,7 +113,30 @@
                  -1px  1px 0 #000,
                   1px  1px 0 #000;
                   font-family: 'Montserrat', sans-serif;
+    z-index: 1;
 
+}
+
+#SomaLogo{
+    height: auto;
+    width: 250px;
+    margin-right: 2vw;
+    margin-top: 21vh;
+    display: flex;
+    vertical-align: bottom;
+    float: inline-end;
+    position:sticky;
+}
+
+#SomaLogo2{ /* LOGO QUANDO O CONTAINER ESTIVER EM MODO MINIMIZADO */
+    height: auto;
+    width: 200px;
+    margin-right: 0.5vw;
+    margin-top: 30vh;
+    display: flex;
+    vertical-align: bottom;
+    float: inline-end;
+    position:sticky;
 }
 
 .fade3-enter { 
